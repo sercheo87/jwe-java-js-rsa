@@ -4,6 +4,13 @@
 
 Example of encryption and decryption with key *RSA* between app's run on **Java** and **Node JS**.
 
+Dependencies relevant used:
+
+| App   | Dependency                                                                              | Version |
+|-------|-----------------------------------------------------------------------------------------|---------|
+|Java   |[nimbus-jose-jwt](https://mvnrepository.com/artifact/com.nimbusds/nimbus-jose-jwt/8.5.1) | 8.5.1 |
+|NodeJs |[jose](https://www.npmjs.com/package/jose/v/1.23.0)                                      | 1.23.0 |
+
 ## Use
 
 Before execute put your files private and public key foder **keys**:
