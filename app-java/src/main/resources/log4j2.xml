@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG" monitorInterval="30">
+    <Properties>
+        <Property name="LOG_PATTERN">%d{ISO8601} [%5p] [%15.15t] [%-40.40c{1.}] [%X{sid}] %m%n%ex</Property>
+    </Properties>
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>${LOG_PATTERN}</Pattern>
+            </PatternLayout>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="org" level="trace" additivity="false">
+            <AppenderRef ref="LogToConsole"/>
+        </Logger>
+        <Root level="error">
+            <AppenderRef ref="LogToConsole"/>
+        </Root>
+    </Loggers>
+</Configuration>
